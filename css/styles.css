@@ -137,6 +137,15 @@ body {
 .nav-link.current {
     color: var(--active-color);
 }
+.nav-link-palka {
+    
+}
+.nav-link.current::after {
+    width: 66px;
+    height: 4px;
+    background: #404BBF;
+    border-radius: 2px;
+}
 .contacts {
     font-weight: 400;
     font-size: 16px;
