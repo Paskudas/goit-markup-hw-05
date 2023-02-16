@@ -414,8 +414,8 @@ body {
     column-gap: 24px;
     row-gap: 48px;
 }
-.p-list:hover .list-cover-text,
-.p-list:focus .list-cover-text{
+.p-item:hover .list-cover-text,
+.p-item:focus .list-cover-text{
     transform: translateY(0);
 }
 .p-item-cower-wrap {
@@ -434,6 +434,7 @@ body {
     height: 100%;
     transform: translateY(100%);
     transition: transform 300ms linear;
+    overflow: auto;*/
 }
 .p-item {
     position: relative;
