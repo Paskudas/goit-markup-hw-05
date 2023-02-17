@@ -617,3 +617,8 @@ body {
     margin-left: auto;
     padding: 0;
 }
+.modal-close:hover,
+.modal-close:focus {
+    background: #404BBF;
+    fill: #FFFFFF;
+} 
