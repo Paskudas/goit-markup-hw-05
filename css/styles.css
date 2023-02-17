@@ -168,10 +168,13 @@ body {
 .mainindex {
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
     background: #2E2F42;    
     background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
     background-repeat: no-repeat;
-    background-position: center;  
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;  
 }
 .effstext {       
     /*left: 473px;
@@ -565,8 +568,7 @@ body {
     height: 100%;
     background-color: ;
     background: rgba(252, 252, 252, 0.4);
-    /*box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;*/
+    transition: opacity 300ms linear, visibility 300ms linear;
 }
 .is-hidden {
     visibility: hidden;
@@ -580,13 +582,17 @@ body {
     position: absolute;    
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     width: 408px;
     min-height: 576px;    
     background: #FCFCFC;
     border-radius: 4px;
     padding: 24px;
+    transition: transform 300ms linear;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
 }
 .modal-close {
     width: 24px;
@@ -598,4 +604,5 @@ body {
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    padding: 0;}
+    padding: 0;
+}
