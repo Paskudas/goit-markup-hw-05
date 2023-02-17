@@ -130,21 +130,26 @@ body {
     letter-spacing: 0.02em;
     color: #2E2F42;
     text-decoration: none;
+    position: relative;
 }
 .nav-link:hover, :focus {
     color: #404BBF;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-link.current {
-    color: var(--active-color);
+.current {
+    color: var(--active-color);    
 }
-/*.nav-link-palka {
-}
-.nav-link.current::after {
-    width: 66px;
+.current::after {
+    content: "";
+    width: 100%;
     height: 4px;
     background: #404BBF;
     border-radius: 2px;
-}*/
+    position: absolute;
+    top: 44px;
+    left: 0;
+}
 .contacts {
     font-weight: 400;
     font-size: 16px;
@@ -156,6 +161,8 @@ body {
 }
 .contacts:hover,.contacts:focus {
     color: #404BBF;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-cont {
   display: flex;
@@ -218,7 +225,9 @@ body {
 .indexbtn:focus {
     background: #404BBF;
     border: 1px solid #404BBF;
-    color: #ffffff;        
+    color: #ffffff;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);        
 }
 .values {
     padding-top: 120px;
@@ -355,11 +364,11 @@ body {
 .ourteam-soc-icon {  
   fill: #ffffff;
 }
-.ourteam-soc-link:is(:hover) {
-  background-color: #404BBF;
-}
+.ourteam-soc-link:is(:hover),
 .ourteam-soc-link:is(:focus) {
   background-color: #404BBF;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textp {
     font-size: 16px;
@@ -393,11 +402,15 @@ body {
 }
 .link:hover ,
 .link:focus {
-    border-color: #404BBF;    
+    border-color: #404BBF;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);    
 }
 .link:hover .icon,
 .link:focus .icon{
     fill: #404BBF;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon {
     fill: #afb1b8;
@@ -424,6 +437,8 @@ body {
 .p-item:hover .list-cover-text,
 .p-item:focus .list-cover-text{
     transform: translateY(0);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .p-item-cower-wrap {
     position: relative;
@@ -455,6 +470,8 @@ body {
 .p-item:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .p-item-wrap {
     padding-top: 32px;
@@ -482,19 +499,13 @@ body {
     background: #404BBF;
     color: #ffffff;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    /*box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;*/    
+    border-radius: 4px; 
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
 }
-/*.btnflex {
-    display: flex;
-    flex-direction: row;
-}*/
-
 /*footer*/
 .backgroundfooter {
-    /*position: absolute;
-    width: 1440px;
+    /*position: absolute;    width: 1440px;
     height: 310px;
     top: 2280px;*/
     background-color: #2E2F42;
@@ -554,11 +565,11 @@ body {
 .footertext-soc-icon {  
   fill: #ffffff;
 }
-.footertext-soc-link:is(:hover) {
-  background-color: #31D0AA;
-} 
+.footertext-soc-link:is(:hover),
 .footertext-soc-link:is(:focus) {
   background-color: #31D0AA;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 } 
 /***modal***/
 .backdrop {
