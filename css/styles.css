@@ -380,6 +380,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--main-color-text, #434455);
 } 
+/***Costumers***/
 .custumers {
     background: #ffffff;
     padding-top: 130px;
@@ -395,7 +396,7 @@ body {
     width: calc((100%-120px) / 6);
     height: 88px;
 }
-.link {
+.custumers-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -408,17 +409,13 @@ body {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link:hover ,
-.link:focus {
+.icon {
+    fill: currentColor;
+}
+.custumers-link:hover ,
+.custumers-link:focus {
     border-color: #404BBF;
     color: #404BBF;        
-}
-.link:hover .icon,
-.link:focus .icon{
-    fill: #404BBF;
-}
-.icon {
-    fill: #afb1b8;
 }
 /*****PORTFOLIO*****/
 .filters {
